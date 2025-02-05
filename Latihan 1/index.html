@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Paragraf, Break and Comment-->
+    <p>Ini Paragraf 1</p>
+    <p>Ini Paragraf 2</p>
+    <hr />
+    Ini baris 1
+    <br />
+    Ini baris 2
+    <!--Ini komentar-->
+
+    <!--HTML Text Formatting-->
+    <hr />
+    <p><b>This text is bold</b></p>
+    <p><i>This text is italic</i></p>
+    <p>This is <sub>subscript</sub> and <sup>superscript</sup></p>
+
+    <!--Unorder Lists-->
+    <!--Type='disc'/'circle'/'square'/'none'-->
+    <h1>Bahasa Pemrograman Untuk Dipelajari</h1>
+    <ul type="circle">
+      <li>Javascript</li>
+      <li>PHP</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Kotlin</li>
+    </ul>
+
+    <!--Order Lists-->
+    <!--Type='1'/'a'/'A'/'i'/'I'-->
+    <h1>Buah Favoritmu:</h1>
+    <ol type="I">
+      <li>Jeruk</li>
+      <li>Durian</li>
+      <li>Pisang</li>
+      <li>Pepaya</li>
+      <li>Mangga</li>
+    </ol>
+
+    <!--HTML Table-->
+    <table border="1px">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Andres</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro Comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+    <br />
+
+    <!--Column Span-->
+    <table border="2">
+      <tr>
+        <th>Asal</th>
+        <th>Domisili</th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <center>Jakarta</center>
+        </td>
+      </tr>
+    </table>
+    <br />
+
+    <!--Row Span-->
+    <table border="1">
+      <tr>
+        <th rowspan="2">Jakarta</th>
+        <td>-A-</td>
+        <td>-B-</td>
+      </tr>
+      <tr>
+        <td>-C-</td>
+        <td>-D-</td>
+      </tr>
+    </table>
+
+    <!--Absolute Links & Relative Links-->
+    <p><a href="https://google.com">Google</a></p>
+    <p>
+      <a href="https://app.onlinepajak.net" target="_blank">Online Pajak</a>
+    </p>
+    <p><a href="satu.html">Halaman satu</a></p>
+    <p><a href="/index.html" target="_blank">Halaman Index</a></p>
+
+    <!--ID Links-->
+    <!--Cara navigasi di halaman yang sama-->
+    <p><a href="#aku">Klik untuk cari namaku!</a></p>
+    <h2 id="kau">Andi</h2>
+    <h2 id="aku">Budi</h2>
+
+    <!--Forms-->
+    <form action="" method="post">
+      <label for="name">Nama</label>
+      <input type="name" type="text" />
+      <br />
+      <label for="name">Password</label>
+      <input type="password" required />
+      <br />
+      <p>Ingat Saya <input type="checkbox" /></p>
+      <p><input type="radio" />Tetap Login</p>
+      <input type="number" min="1" max="10" />
+      <br />
+      <br />
+      <textarea rows="8" cols="64">Ketik disini</textarea>
+      <br />
+      <input type="submit" value="OK" />
+    </form>
+
+    <!--Option Groups-->
+    <h2>Minuman Favoritmu</h2>
+    <select>
+      <optgroup label="Jus Buah">
+        <option value="apel">Jus Apel</option>
+        <option value="jeruk">Jus Jeruk</option>
+        <option value="mangga">Jus Mangga</option>
+      </optgroup>
+      <optgroup label="Jamu">
+        <option value="kencur">Kencur</option>
+        <option value="asem">Asem Jawa</option>
+        <option value="brotowali">Brotowali</option>
+      </optgroup>
+    </select>
+
+    <!--Select Forms-->
+    <h3>Apa Motor Favoritmu</h3>
+    <select>
+      <option>Beat</option>
+      <option>Mio</option>
+      <option>Skywave</option>
+    </select>
+    <h3>Apa Makanan Favoritmu</h3>
+    <select>
+      <option>Nasi Padang</option>
+      <option>Baso</option>
+      <option>Soto Mie</option>
+      <option selected>Nasi Kebuli</option>
+    </select>
+    <br />
+    <br />
+
+    <!--Button-->
+    <button type="button">OK</button>
+    <button type="menu">Menu</button>
+    <button type="reset">Reset</button>
+    <button type="submit">Apply</button>
+    <br />
+
+    <!--Radio Button-->
+    <input type="radio" id="html" name="fav_language" value="HTML" />
+    <label for="html">HTML</label>
+    <input type="radio" id="css" name="fav_language" value="CSS" />
+    <label for="css">CSS</label>
+    <input
+      type="radio"
+      id="javascript"
+      name="fav_language"
+      value="Javascript"
+    />
+    <label for="javascript">Javascript</label>
+
+    <!--Field Sets & Legends-->
+    <fieldset>
+      <p></p>
+      <legend>Data Diri</legend>
+      <label for="nama">Nama:</label>
+      <input type="text" name="nama" />
+      <p></p>
+      <label for="usia">Usia:</label>
+      <input type="number" name="usia" />
+    </fieldset>
+
+    <!--Division Tag-->
+    <div><p>Ini adalah division tag</p></div>
+    <!--Span Tag-->
+    <p>Namaku <span>Mr.X</span></p>
+  </body>
+</html>
